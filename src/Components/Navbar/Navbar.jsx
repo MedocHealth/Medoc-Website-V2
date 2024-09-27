@@ -26,10 +26,10 @@ const Navbar = () => {
           
           {/* Desktop buttons */}
           <div className="hidden lg:flex lg:items-center lg:space-x-2">
-            <button className="download-btn bg-white text-green-600 border border-green-600 px-3 py-1 rounded-md text-sm font-medium hover:bg-green-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+            <button className="download-btn bg-white text-black-600 border border-black-600 px-3 py-1 rounded-md text-sm font-medium  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500">
               Download App
             </button>
-            <button className=" text-white px-3 py-1 rounded-md text-sm font-medium hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 contact-us">
+            <button className=" text-white px-3 py-1 rounded-md text-sm font-medium  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 contact-us">
               Contact Us
             </button>
           </div>
@@ -38,7 +38,7 @@ const Navbar = () => {
           <div className="lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black-700"
             >
               <span className="sr-only">Open main menu</span>
               {isOpen ? <X className="block h-6 w-6" /> : <Menu className="block h-6 w-6" />}
@@ -58,10 +58,10 @@ const Navbar = () => {
             <MobileNavLink to="/pricing">Pricing</MobileNavLink>
           </div>
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <button className="w-full text-left block bg-white text-green-600 border border-green-600 px-3 py-2 rounded-md text-base font-medium hover:bg-green-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+            <button className="w-full text-left block bg-white text-black-600 border  px-3 py-2 rounded-md text-base font-medium  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
               Download App
             </button>
-            <button className=" w-full text-left block bg-green-600 text-white px-3 py-2 rounded-md text-base font-medium hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 mobile-contact-us">
+            <button className=" w-full text-left block  text-white px-3 py-2 rounded-md text-base font-medium  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 mobile-contact-us">
               Contact Us
             </button>
           </div>

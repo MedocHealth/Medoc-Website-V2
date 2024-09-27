@@ -7,6 +7,9 @@
   .contact-us{
     background-color: #2A4755;
   }
+  .contact-us:hover{
+    background-color: #cbd5e1;
+  }
   .download-btn{
     background: #41C1BA14;
 
