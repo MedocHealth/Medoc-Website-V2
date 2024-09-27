@@ -1,7 +1,19 @@
 .nav-item {
     position: relative;
   }
-  
+  .custom-nav{
+    background-color:#cbd5e1 ;
+  }
+  .contact-us{
+    background-color: #2A4755;
+  }
+  .download-btn{
+    background: #41C1BA14;
+
+  }
+  .mobile-contact-us{
+    background-color: #2A4755;
+  }
   .nav-item .underline {
     content: '';
     width: 0;
@@ -21,4 +33,9 @@
   .nav-item.active a {
     color: #2dd4bf; /* Teal color for the active link */
   }
-  
+  @media (max-width: 1023px) {
+    .custom-nav {
+      position: relative;
+      z-index: 50;
+    }
+  }
