@@ -26,7 +26,7 @@ const Vitals = () => {
   ];
 
   return (
-    <div className="vitals-container bg-blue-50 p-8 rounded-xl">
+    <div className="bg-[#EDFCFC] vitals-container  p-8 rounded-xl">
       <h1 className="text-4xl font-bold text-center text-gray-800 mb-2">Medoc Vitals</h1>
       <p className="text-center text-gray-600 mb-8">
         Discover product updates, health-related news, and helpful insights.
