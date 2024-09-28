@@ -18,7 +18,7 @@ const Navbar = () => {
           
           {/* Desktop menu */}
           <div className="hidden lg:flex lg:space-x-4">
-            <NavLink to="/" className="nav-link">Home</NavLink>
+            <NavLink to="/" className="nav-link hover:text-teal-500">Home</NavLink>
             <NavLink to="/pricing" className="nav-link">Pricing</NavLink>
             <NavLink to="/ecosystem" className="nav-link">Ecosystem</NavLink>
             <NavLink to="/vitals" className="nav-link">Vitals</NavLink>
