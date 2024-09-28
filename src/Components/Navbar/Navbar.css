@@ -4,6 +4,11 @@
   .custom-nav{
     background-color:#cbd5e1 ;
     font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+ 
+  .container {
+    max-width: 1280px; /* Adjust this value to match your content width */
   }
   .contact-us{
     background-color: #2A4755;
@@ -22,20 +27,24 @@
     content: '';
     width: 0;
     height: 2px;
-    background-color: #2dd4bf; /* Teal color for underline */
+    background-color: #2dd4bf;
     position: absolute;
     left: 0;
     bottom: -5px;
     transition: width 0.3s;
   }
+  .nav-link {
+    text-decoration: none; /* No underline by default */
+  }
   
-  .nav-item:hover .underline,
-  .nav-item.active .underline {
+  .nav-item:hover::after,
+  .nav-item.active::after {
     width: 100%;
   }
   
-  .nav-item.active a {
-    color: #2dd4bf; /* Teal color for the active link */
+  .nav-item:hover,
+  .nav-item.active {
+    color: #2dd4bf;
   }
   @media (max-width: 1023px) {
     .custom-nav {

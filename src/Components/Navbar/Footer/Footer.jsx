@@ -1,10 +1,10 @@
 import React from 'react';
 import medocNav from '../../../Images/logo-nav.png';
 import { FaGooglePlay } from 'react-icons/fa';
-
+import './Footer.css';
 const Footer = () => {
     return (
-      <footer className="bg-white text-gray-800 py-8 px-4 md:px-8">
+      <footer className="custom-footer g-white text-gray-800 py-8 px-4 md:px-8">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">

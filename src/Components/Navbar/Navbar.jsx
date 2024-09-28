@@ -8,8 +8,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" shadow-sm custom-nav rounded-lg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+   
+    <nav className=" shadow-sm custom-nav rounded-lg ">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center">
             <img className="h-8 w-auto" src={medocNav} alt="MEDOC" />
@@ -17,11 +18,11 @@ const Navbar = () => {
           
           {/* Desktop menu */}
           <div className="hidden lg:flex lg:space-x-4">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/pricing">Pricing</NavLink>
-            <NavLink to="/ecosystem">Ecosystem</NavLink>
-            <NavLink to="/vitals">Vitals</NavLink>
-            <NavLink to="/pricing">Pricing</NavLink>
+            <NavLink to="/" className="nav-link">Home</NavLink>
+            <NavLink to="/pricing" className="nav-link">Pricing</NavLink>
+            <NavLink to="/ecosystem" className="nav-link">Ecosystem</NavLink>
+            <NavLink to="/vitals" className="nav-link">Vitals</NavLink>
+            <NavLink to="/pricing" className="nav-link">Pricing</NavLink>
           </div>
           
           {/* Desktop buttons */}
