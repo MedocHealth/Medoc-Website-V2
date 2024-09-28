@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
    
-    <nav className=" shadow-sm custom-nav rounded-lg ">
+    <nav className="shadow-xl custom-nav rounded-lg ">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center">

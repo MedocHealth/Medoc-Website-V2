@@ -106,7 +106,7 @@ const Main_Code = () => {
             <div className="container even-card">
                 <div className="image-section">
                     <img
-                        src="src\What-Do-We-Do\6.svg"
+                        src="src\Components\What-Do-We-Do\6.svg"
                         alt="Hospital Illustration"
                        className="max-w-[353px] w-full object-contain"
                     />
