@@ -27,7 +27,7 @@ const Footer_What_Do_We_Do = () => {
           {/* App Store Button */}
           <button className="bg-black text-white py-2 px-4 rounded-lg flex items-center space-x-2">
             <img
-              src="/path/to/Apple Logo.svg"  // Update the path to your actual image
+              src="src\Components\What-Do-We-Do\Apple Logo.svg"  // Update the path to your actual image
               alt="App Store"
               className="w-6"
             />
