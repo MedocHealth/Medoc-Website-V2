@@ -3,8 +3,8 @@ import './Form.css';
 
 const Form = () => {
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
-            <div className="w-full max-w-4xl bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="min-h-screen flex items-center justify-center  p-4">
+            <div className=" w-full bg-white rounded-lg shadow-md overflow-hidden">
                 <div className="md:flex">
                     <div className="md:w-1/2 bg-teal-500 p-8 text-white flex flex-col justify-center">
                         <h2 className="text-3xl font-bold mb-4">Medoc Free Demo Registration</h2>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer_What_Do_We_Do = () => {
   return (
-    <div className="bg-gradient-to-r from-teal-300 to-gray-600 rounded-xl mx-auto p-8 flex flex-col md:flex-row justify-center items-center md:space-x-10 max-w-6xl mt-20">
+    <div className="bg-gradient-to-r from-teal-300 to-gray-600 rounded-xl mx-auto p-8 flex flex-col md:flex-row justify-center items-center md:space-x-10 w-full mt-20">
       {/* iPhone Image Section */}
       <div className="image-section relative flex justify-center">
         <img

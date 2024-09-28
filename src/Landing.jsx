@@ -20,10 +20,11 @@ function Landing() {
       <OurProduct />
       <AboutMed />
       <MedEcosystem />
+      <Vitals />
 <Header/>
 <Main_Code/>
-<Foot_What/>
-      <Vitals />
+      
+      <Foot_What/>
       <Form/>
       <Footer />
     </div>
