@@ -1,0 +1,31 @@
+/* MedocForm.css */
+
+/* Custom styles for Medoc Registration Form */
+.medoc-form-container {
+    background-color: #f0f9ff; /* Light blue background */
+  }
+  
+  .medoc-form-title {
+    color: #0369a1; /* Dark blue text for the title */
+  }
+  
+  .medoc-form-button {
+    background-color: #14b8a6; /* Teal color for the button */
+    transition: background-color 0.3s ease;
+  }
+  
+  .medoc-form-button:hover {
+    background-color: #0d9488; /* Darker teal on hover */
+  }
+  .bg-blue-600 {
+    background-color: #2563eb; /* Adjust the blue color as needed */
+  }
+  
+  .bg-teal-500 {
+    background-color: #14b8a6; /* Adjust the teal color as needed */
+  }
+  
+  .bg-teal-500:hover {
+    background-color: #0d9488; /* Darker teal on hover */
+  }
+  /* Add any additional custom styles here */

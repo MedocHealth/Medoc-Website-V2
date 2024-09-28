@@ -36,7 +36,7 @@ const Footer = () => {
                 <ul className="space-y-2 text-sm">
                   <li><a href="#" className="hover:text-teal-500">FAQs</a></li>
                   <li><a href="#" className="hover:text-teal-500">Contact Us</a></li>
-                  <li><a href="#" className="hover:text-teal-500">Me Privacy Policy</a></li>
+                  <li><a href="/mePolicy" className="hover:text-teal-500">Me Privacy Policy</a></li>
                 </ul>
                 <a href="#" className="inline-flex items-center bg-black text-white px-4 py-2 rounded-lg mt-4 hover:bg-gray-800 transition-colors">
                   <FaGooglePlay className="mr-2" />
