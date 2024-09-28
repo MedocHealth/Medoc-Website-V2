@@ -27,7 +27,7 @@ const Navbar = () => {
           
           {/* Desktop buttons */}
           <div className="hidden lg:flex lg:items-center lg:space-x-2">
-            <button className="download-btn bg-white text-black-600 border border-black-600 px-3 py-1 rounded-md text-sm font-medium  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500">
+            <button className="download-btn bg-white  border border-black-600 px-3 py-1 rounded-md text-sm font-medium  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500">
               Download App
             </button>
             <button className=" text-white px-3 py-1 rounded-md text-sm font-medium  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 contact-us">
