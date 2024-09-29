@@ -6,7 +6,7 @@ const Form = () => {
         <div className="min-h-screen flex items-center justify-center  p-4">
             <div className=" w-full bg-white rounded-lg shadow-md overflow-hidden">
                 <div className="md:flex">
-                    <div className="md:w-1/2 bg-teal-500 p-8 text-white flex flex-col justify-center">
+                    <div className="md:w-1/2 bg-gradient-to-r from-teal-300 to-gray-600 p-8 text-white flex flex-col justify-center">
                         <h2 className="medoc-form-title">Medoc Free Demo Registration</h2>
                         <p className="medoc-form-para">Welcome to Medoc! Simplify healthcare with affordable finances and trusted family medicine. Join us today!</p>
                     </div>
@@ -82,7 +82,7 @@ const Form = () => {
 
                             <button
                                 type="submit"
-                                className="input-font-style w-full bg-teal-500 text-white py-2 px-4 rounded-md hover:bg-teal-600 transition duration-300"
+                                className="input-font-style w-full bg-gradient-to-r from-teal-300 to-gray-600 text-white py-2 px-4 rounded-md hover:bg-teal-600 transition duration-300"
                             >
                                 Request Free Demo
                             </button>
