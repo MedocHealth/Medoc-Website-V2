@@ -24,9 +24,9 @@ const Footer = () => {
                 <h3 className="font-semibold heading-links text-lg mb-4">Useful Links</h3>
                 <ul className="space-y-2 ul-font-style text-sm">
                   <li><a href="#" className="hover:text-teal-500">How it Works?</a></li>
-                  <li><a href="#" className="hover:text-teal-500">Privacy Policy</a></li>
-                  <li><a href="#" className="hover:text-teal-500">Terms of Use</a></li>
-                  <li><a href="#" className="hover:text-teal-500">Refund policy</a></li>
+                  <li><a href="privacyPolicy" className="hover:text-teal-500">Privacy Policy</a></li>
+                  <li><a href="/termsofuse" className="hover:text-teal-500">Terms of Use</a></li>
+                  <li><a href="/refundpolicy" className="hover:text-teal-500">Refund policy</a></li>
                   <li><a href="#" className="hover:text-teal-500">Career</a></li>
                 </ul>
               </div>
@@ -34,14 +34,22 @@ const Footer = () => {
               <div>
                 <h3 className="heading-links font-semibold text-lg mb-4">Support</h3>
                 <ul className="ul-font-style space-y-2 text-sm">
-                  <li><a href="#" className="hover:text-teal-500">FAQs</a></li>
-                  <li><a href="#" className="hover:text-teal-500">Contact Us</a></li>
+                  <li><a href="/faq" className="hover:text-teal-500">FAQs</a></li>
+                  <li><a href="/contact" className="hover:text-teal-500">Contact Us</a></li>
                   <li><a href="/mePolicy" className="hover:text-teal-500">Me Privacy Policy</a></li>
                 </ul>
-                <a href="#" className="inline-flex items-center bg-black text-white px-4 py-2 rounded-lg mt-4 hover:bg-gray-800 transition-colors">
-                  <FaGooglePlay className="mr-2" />
-                  Get it on Google Play
-                </a>
+                <a
+  href="#"
+  className="inline-flex items-center bg-black text-white px-4 py-2 rounded-lg mt-4 hover:bg-gray-800 transition-colors"
+  onClick={(e) => {
+    e.preventDefault(); // Prevent the default anchor behavior
+    window.open('https://play.google.com/store/apps/dev?id=5749449385881385609&hl=en_IN', '_blank');
+  }}
+>
+  <FaGooglePlay className="mr-2" />
+  Get it on Google Play
+</a>
+
               </div>
             </div>
           </div>

@@ -3,7 +3,7 @@ import './Form.css';
 
 const Form = () => {
     return (
-        <div className="min-h-screen flex items-center justify-center  p-4">
+        <div className="form min-h-screen flex items-center justify-center  p-4">
             <div className=" w-full bg-white rounded-lg shadow-md overflow-hidden">
                 <div className="md:flex">
                     <div className="md:w-1/2 bg-gradient-to-r from-teal-300 to-gray-600 p-8 text-white flex flex-col justify-center">
@@ -20,13 +20,13 @@ const Form = () => {
                                 className="w-full px-3 py-2 border input-font-style border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                             />
 
-                            <select name="Specialities" className="input-font-style w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                                <option value="Speciality">Speciality</option>
-                                <option value="general">General Medicine</option>
-                                <option value="pediatrics">Pediatrics</option>
-                                <option value="cardiology">Cardiology</option>
-                                <option value="neurology">Neurology</option>
-                                <option value="orthopedics">Orthopedics</option>
+                            <select name="Specialities" placeholder="Type" className="input-font-style w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option value="general">Type</option>
+                                <option value="general">Doctor</option>
+                                <option value="pediatrics">Hospital</option>
+                                <option value="cardiology">Clinic</option>
+                                <option value="neurology">Emergency</option>
+                                <option value="orthopedics">Other</option>
                             </select>
 
                             <input
@@ -35,16 +35,36 @@ const Form = () => {
                                 className="input-font-style w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                             />
 
-                            <select name="City" className="input-font-style w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                                <option value="Chandigarh">Chandigarh</option>
-                                <option value="Amritsar">Amritsar</option>
-                                <option value="Ludhiana">Ludhiana</option>
-                                <option value="Patiala">Patiala</option>
-                                <option value="Jalandhar">Jalandhar</option>
-                                <option value="Bathinda">Bathinda</option>
-                                <option value="Hoshiarpur">Hoshiarpur</option>
-                                <option value="Mohali">Mohali</option>
-                                <option value="Pathankot">Pathankot</option>
+                            <select name="States" className="input-font-style w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option value="">Select a State</option>
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="West Bengal">West Bengal</option>
                             </select>
 
                             <div className="flex">

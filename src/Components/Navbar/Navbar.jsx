@@ -19,17 +19,21 @@ const Navbar = () => {
           {/* Desktop menu */}
           <div className="hidden lg:flex lg:space-x-4">
             <NavLink to="/" className="nav-link hover:text-teal-500">Home</NavLink>
-            <NavLink to="/pricing" className="nav-link">Pricing</NavLink>
-            <NavLink to="http://blog.medochealth.in" className="nav-link">Ecosystem</NavLink>
+
+            {/* <NavLink to="http://blog.medochealth.in" className="nav-link">Ecosystem</NavLink> */}
             <NavLink to="http://blog.medochealth.in" className="nav-link">Vitals</NavLink>
             <NavLink to="http://blog.medochealth.in/pricing" className="nav-link">Pricing</NavLink>
           </div>
           
           {/* Desktop buttons */}
           <div className="hidden lg:flex lg:items-center lg:space-x-2">
-            <button className="download-btn bg-white  border border-black-600 px-3 py-1 rounded-md text-sm font-medium  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500">
-              Download App
-            </button>
+          <button
+  className="download-btn bg-white border border-black-600 px-3 py-1 rounded-md text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500"
+  onClick={() => window.open('https://play.google.com/store/apps/dev?id=5749449385881385609&hl=en_IN', '_blank')}
+>
+  Download App
+</button>
+
             <button className=" text-white px-3 py-1 rounded-md text-sm font-medium  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 contact-us">
               Contact Us
             </button>
@@ -53,16 +57,16 @@ const Navbar = () => {
         <div className="lg:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <MobileNavLink to="/">Home</MobileNavLink>
-            <MobileNavLink to="/pricing">Pricing</MobileNavLink>
-            <MobileNavLink to="http://blog.medochealth.in">Ecosystem</MobileNavLink>
+            {/* <MobileNavLink to="http://blog.medochealth.in">Ecosystem</MobileNavLink> */}
             <MobileNavLink to="http://blog.medochealth.in">Vitals</MobileNavLink>
-            <MobileNavLink to="/pricing">Pricing</MobileNavLink>
+            <MobileNavLink to="http://blog.medochealth.in/pricing">Pricing</MobileNavLink>
           </div>
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <button className="w-full text-left block bg-white text-black-600 border  px-3 py-2 rounded-md text-base font-medium  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+            <button className="w-full text-left block bg-white text-black-600 border  px-3 py-2 rounded-md text-base font-medium  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-50"
+              onClick={() => window.open('https://play.google.com/store/apps/dev?id=5749449385881385609&hl=en_IN', '_blank')}>
               Download App
             </button>
-            <button className=" w-full text-left block  text-white px-3 py-2 rounded-md text-base font-medium  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 mobile-contact-us">
+            <button className=" w-full text-left block  text-white px-3 py-2 rounded-md text-base font-medium  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-50 mobile-contact-us">
               Contact Us
             </button>
           </div>
