@@ -27,30 +27,30 @@ const Vitals = () => {
 
   return (
     <div className="bg-[#EDFCFC] vitals-container  p-8 rounded-xl">
-      <h1 className="text-4xl font-bold text-center text-gray-800 mb-2">Medoc Vitals</h1>
-      <p className="text-center text-gray-600 mb-8">
+      <h1 className="text-4xl Heading font-bold text-center text-gray-800 mb-2">Medoc Vitals</h1>
+      <p className="text-center  subHeading text-gray-600 mb-8">
         Discover product updates, health-related news, and helpful insights.
       </p>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {articles.map((article, index) => (
-          <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md">
+          <div key={index} className="bg-[#EDFCFC] rounded-lg overflow-hidden shadow-md">
             <img src={article.image} alt={article.title} className="w-full h-48 object-cover" />
             <div className="p-4">
               <div className="flex flex-wrap gap-2 mb-2">
                 {article.tags.map((tag, tagIndex) => (
-                  <span key={tagIndex} className="text-xs text-blue-600">{tag}</span>
+                  <span key={tagIndex} className="tags">{tag}</span>
                 ))}
               </div>
-              <h2 className="text-xl font-semibold mb-2">{article.title}</h2>
-              <p className="text-gray-600 text-sm mb-4">{article.content}</p>
+              <h2 className="text-xl articleheading font-semibold mb-2">{article.title}</h2>
+              <p className=" articlepara text-sm mb-4">{article.content}</p>
             </div>
           </div>
         ))}
       </div>
       
       <div className="text-center mt-8">
-        <button className="bg-gray-700 text-white px-6 py-2 rounded-md hover:bg-gray-600 transition-colors">
+        <button className="bg-gray-700 Bookbtn text-white px-6 py-2 rounded-md hover:bg-gray-600 transition-colors">
           Read More
         </button>
       </div>

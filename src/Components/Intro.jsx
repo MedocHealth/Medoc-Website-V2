@@ -16,7 +16,7 @@ const Intro = () => {
               AI Powered Healthcare Automation System for Hospitals and
               Healthcare Providers.
             </h3>
-            <h4 className="para flex justify-center items-center font-medium text-m text-justify text-[#2a4755]">
+            <h4 className="para flex justify-center items-center font-medium text-m text-justify text-[#2A4755]">
               {" "}
               The single destination for all your healthcare needs.
             </h4>
