@@ -1,70 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 .nav-item {
-    position: relative;
-  }
-  .custom-nav{
-    
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-  }
- 
-  .container {
-    max-width: 1280px; /* Adjust this value to match your content width */
-  }
-  .contact-us{
-    background-color: #2A4755;
-    color: #FFFFFFE5;  
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 12px;  
-  }
-  .contact-us:hover{
+  position: relative;
+}
+.custom-nav {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1280px; /* Adjust this value to match your content width */
+}
+.contact-us {
+  background-color: #2a4755;
+  color: #ffffffe5;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+}
+/* .contact-us:hover{
     background-color: #cbd5e1;
+  } */
+.download-btn {
+  background: #41c1ba14;
+  color: #2a4755 !important;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+}
+.mobile-contact-us {
+  background-color: #2a4755;
+}
+.nav-item .underline {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #2dd4bf;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s;
+}
+.nav-link {
+  color: #2a4755;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-item:hover::after,
+.nav-item.active::after {
+  width: 100%;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  color: #2dd4bf;
+}
+@media (max-width: 1023px) {
+  .custom-nav {
+    position: relative;
+    z-index: 50;
   }
-  .download-btn{
-    background: #41C1BA14;
-    color: #2A4755 !important;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 12px;
-  }
-  .mobile-contact-us{
-    background-color: #2A4755;
-  }
-  .nav-item .underline {
-    content: '';
-    width: 0;
-    height: 2px;
-    background-color: #2dd4bf;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    transition: width 0.3s;
-  }
-  .nav-link {
-    color: #2A4755;
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
-    text-decoration: none; 
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .nav-item:hover::after,
-  .nav-item.active::after {
-    width: 100%;
-  }
-  
-  .nav-item:hover,
-  .nav-item.active {
-    color: #2dd4bf;
-  }
-  @media (max-width: 1023px) {
-    .custom-nav {
-      position: relative;
-      z-index: 50;
-    }
-  }
+}

@@ -3,7 +3,7 @@ import Medphone from "./Assets/iPhone16.png";
 import "./Intro.css";
 import Ecosystem from "./Assets/ecosystem.png";
 
-const Intro = ({scrollToDemo}) => {
+const Intro = ({ scrollToDemo }) => {
   return (
     <div>
       <div className="flex  flex-col sm:flex-row w-full  bg-[#41C1BA14] rounded-md mx-auto my-4 p-8  md:p-20">
@@ -21,12 +21,14 @@ const Intro = ({scrollToDemo}) => {
               The single destination for all your healthcare needs.
             </h4>
           </div>
-          <button 
-  className="explore flex m-auto my-8 p-4 rounded-md bg-[#41C1BA] text-white font-medium hover:bg-[#33B4A7] transition-colors"
-  onClick={scrollToDemo}
->
-  Book a Demo
-</button>
+          <button
+            className="explore flex m-auto my-8 p-4 rounded-md bg-[#41C1BA] text-white font-medium hover:bg-[#33B4A7]  hover:scale-105 transition delay-130 duration-200 ease-in-out
+            "
+            onClick={scrollToDemo}
+          >
+            {" "}
+            Book a Demo
+          </button>
         </div>
         <div className="flex">
           <img src={Medphone} alt="" />
