@@ -14,7 +14,10 @@ function Landing() {
   return (
     <div className="pt-4 pl-4 pr-4">
       <Navbar />
+      <div >
       <Intro />
+      </div>
+     
       <OurProduct />
       <AboutMed />
       <MedEcosystem />
