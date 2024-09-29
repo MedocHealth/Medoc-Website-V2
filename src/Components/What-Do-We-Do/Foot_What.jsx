@@ -1,4 +1,6 @@
 import React from 'react';
+import iPhone from "./iPhone 15.svg"
+import Ellipse from "./Ellipse 543.svg"
 import { FaGooglePlay,FaApple } from 'react-icons/fa';
 const Footer_What_Do_We_Do = () => {
   return (
@@ -6,12 +8,12 @@ const Footer_What_Do_We_Do = () => {
       {/* iPhone Image Section */}
       <div className="image-section relative flex justify-center">
         <img
-          src="src\Components\What-Do-We-Do\iPhone 15.svg"  // Update the path to your actual image
+          src={iPhone}  // Update the path to your actual image
           alt="iPhone Illustration"
           className="max-w-[300px] object-contain transition-transform duration-300 transform hover:scale-105 shadow-lg"
         />
         <img
-          src="src\Components\What-Do-We-Do\Ellipse 543.svg"  // Update the path to your actual image
+          src={Ellipse}  // Update the path to your actual image
           alt="Shadow"
           className="absolute bottom-[-20px] left-0 right-0 w-[150px] mx-auto opacity-60"
         />
