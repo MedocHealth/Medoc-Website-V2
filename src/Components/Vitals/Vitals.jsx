@@ -1,9 +1,11 @@
 import React from 'react';
+
 import './Vitals.css';
 import img1 from '../../Images/image1.png';
 import img2 from '../../Images/image2.png';
 import img3 from '../../Images/image3.png';
 const Vitals = () => {
+  
   const articles = [
     {
       image:img1,
@@ -50,7 +52,8 @@ const Vitals = () => {
       </div>
       
       <div className="text-center mt-8">
-        <button className="bg-gray-700 Bookbtn text-white px-6 py-2 rounded-md hover:bg-gray-600 transition-colors">
+        <button className="bg-gray-700 Bookbtn text-white px-6 py-2 rounded-md hover:bg-gray-600 transition-colors"
+        onClick={() => window.location.href = 'http://blog.medochealth.in/'}>
           Read More
         </button>
       </div>

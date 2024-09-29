@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
    
-    <nav className="shadow-xl custom-nav rounded-lg ">
+    <nav className="shadow-xl bg-white custom-nav rounded-lg z-50 ">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center">
@@ -20,8 +20,8 @@ const Navbar = () => {
           <div className="hidden lg:flex lg:space-x-4">
             <NavLink to="/" className="nav-link hover:text-teal-500">Home</NavLink>
             <NavLink to="/pricing" className="nav-link">Pricing</NavLink>
-            <NavLink to="/ecosystem" className="nav-link">Ecosystem</NavLink>
-            <NavLink to="/vitals" className="nav-link">Vitals</NavLink>
+            <NavLink to="http://blog.medochealth.in" className="nav-link">Ecosystem</NavLink>
+            <NavLink to="http://blog.medochealth.in" className="nav-link">Vitals</NavLink>
             <NavLink to="/pricing" className="nav-link">Pricing</NavLink>
           </div>
           
@@ -54,8 +54,8 @@ const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1">
             <MobileNavLink to="/">Home</MobileNavLink>
             <MobileNavLink to="/pricing">Pricing</MobileNavLink>
-            <MobileNavLink to="/ecosystem">Ecosystem</MobileNavLink>
-            <MobileNavLink to="/vitals">Vitals</MobileNavLink>
+            <MobileNavLink to="http://blog.medochealth.in">Ecosystem</MobileNavLink>
+            <MobileNavLink to="http://blog.medochealth.in">Vitals</MobileNavLink>
             <MobileNavLink to="/pricing">Pricing</MobileNavLink>
           </div>
           <div className="px-2 pt-2 pb-3 space-y-1">
