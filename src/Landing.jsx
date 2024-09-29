@@ -21,7 +21,6 @@ function Landing() {
       <Vitals />
       <Header />
       <Main_Code />
-
       <Foot_What />
       <Form />
       <Footer />

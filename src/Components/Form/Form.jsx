@@ -7,8 +7,8 @@ const Form = () => {
             <div className=" w-full bg-white rounded-lg shadow-md overflow-hidden">
                 <div className="md:flex">
                     <div className="md:w-1/2 bg-teal-500 p-8 text-white flex flex-col justify-center">
-                        <h2 className="text-3xl font-bold mb-4">Medoc Free Demo Registration</h2>
-                        <p className="text-xl">Welcome to Medoc! Simplify healthcare with affordable finances and trusted family medicine. Join us today!</p>
+                        <h2 className="medoc-form-title">Medoc Free Demo Registration</h2>
+                        <p className="medoc-form-para">Welcome to Medoc! Simplify healthcare with affordable finances and trusted family medicine. Join us today!</p>
                     </div>
 
                     {/* Form begins here */}
@@ -17,10 +17,10 @@ const Form = () => {
                             <input
                                 type="text"
                                 placeholder="Doctor/Hospital Name"
-                                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                className="w-full px-3 py-2 border input-font-style border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                             />
 
-                            <select name="Specialities" className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <select name="Specialities" className="input-font-style w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                                 <option value="Speciality">Speciality</option>
                                 <option value="general">General Medicine</option>
                                 <option value="pediatrics">Pediatrics</option>
@@ -32,10 +32,10 @@ const Form = () => {
                             <input
                                 type="text"
                                 placeholder="Your Name"
-                                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                className="input-font-style w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                             />
 
-                            <select name="City" className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <select name="City" className="input-font-style w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                                 <option value="Chandigarh">Chandigarh</option>
                                 <option value="Amritsar">Amritsar</option>
                                 <option value="Ludhiana">Ludhiana</option>
@@ -48,7 +48,7 @@ const Form = () => {
                             </select>
 
                             <div className="flex">
-                                <select name="Country-Code" className="w-1/4 px-3 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <select name="Country-Code" className="input-font-style w-[28%] px-3 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                                     <option value="+91">+91 India</option>
                                     <option value="+1">+1 USA/Canada</option>
                                     <option value="+44">+44 United Kingdom</option>
@@ -64,25 +64,25 @@ const Form = () => {
                                 <input
                                     type="tel"
                                     placeholder="Phone Number"
-                                    className="w-3/4 px-3 py-2 border border-gray-300 rounded-r-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    className="input-font-style w-3/4 px-3 py-2 border border-gray-300 rounded-r-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 />
                             </div>
 
                             <input
                                 type="email"
                                 placeholder="Your Email"
-                                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                className="input-font-style w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                             />
 
                             <textarea
                                 placeholder="Your message....."
                                 rows="4"
-                                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                className="input-font-style w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                             ></textarea>
 
                             <button
                                 type="submit"
-                                className="w-full bg-teal-500 text-white py-2 px-4 rounded-md hover:bg-teal-600 transition duration-300"
+                                className="input-font-style w-full bg-teal-500 text-white py-2 px-4 rounded-md hover:bg-teal-600 transition duration-300"
                             >
                                 Request Free Demo
                             </button>
