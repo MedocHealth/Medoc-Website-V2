@@ -22,7 +22,7 @@ const Navbar = () => {
             <NavLink to="/pricing" className="nav-link">Pricing</NavLink>
             <NavLink to="http://blog.medochealth.in" className="nav-link">Ecosystem</NavLink>
             <NavLink to="http://blog.medochealth.in" className="nav-link">Vitals</NavLink>
-            <NavLink to="/pricing" className="nav-link">Pricing</NavLink>
+            <NavLink to="http://blog.medochealth.in/pricing" className="nav-link">Pricing</NavLink>
           </div>
           
           {/* Desktop buttons */}
