@@ -1,7 +1,7 @@
 import React from "react";
 import Ecosystem from "./Assets/ecosystem.png";
-import "./MedEcosystem.css"
-const MedEcosystem = ({scrollToVideo}) => {
+import "./MedEcosystem.css";
+const MedEcosystem = ({ scrollToVideo }) => {
   return (
     <div>
       <div className="flex flex-col  justify-center  ">
@@ -20,10 +20,11 @@ const MedEcosystem = ({scrollToVideo}) => {
       <div className="flex w-3/4 md:w-1/2 m-auto justify-between items-center">
         <img src={Ecosystem} alt="" />
       </div>
-     
+
       <div className="text-center mt-8 mb-8">
-        <button className= "bg-gray-700 Bookbtn text-white px-6 py-2 rounded-md hover:bg-gray-600 transition-colors"
-        onClick={scrollToVideo} 
+        <button
+          className="bg-gray-700 Bookbtn text-white px-6 py-2 rounded-md hover:bg-gray-600 hover:scale-105 transition delay-130 duration-200 ease-in-out"
+          onClick={scrollToVideo}
         >
           Explore The Ecosystem
         </button>

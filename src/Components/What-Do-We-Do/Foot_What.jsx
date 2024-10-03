@@ -28,7 +28,7 @@ const Footer_What_Do_We_Do = () => {
         <p className="Foot-What-para text-lg text-white">
           It's the perfect time to join the Medoc ecosystem.
         </p>
-        <div className="flex justify-center md:justify-start space-x-4">
+        <div className="flex flex-col lg:flex-row justify-center md:justify-start lg:space-x-4">
           {/* App Store Button */}
           {/* <button className="bg-black text-white py-2 px-4 rounded-lg flex items-center space-x-2">
             <img
@@ -49,18 +49,28 @@ const Footer_What_Do_We_Do = () => {
           </button> */}
           <a
             href="#"
-            className="span-font inline-flex items-center bg-black text-white px-4 py-4 rounded-lg mt-4 hover:bg-gray-800 transition-colors"
+            className="span-font inline-flex items-center w-fit  bg-black text-white px-4 py-4 rounded-lg mt-4 hover:bg-gray-800 transition-colors"
           >
-            <FaApple className=" mr-2" />
-            Get it on the App Store
+            <FaApple className="flex w-12 h-12" />
+            <div className="flex flex-col justify-start">
+              <span className=" flex justify-start">Get it on </span>
+              <span className="flex  justify-start font-semibold text-3xl pr-5 lg:px-1 ">
+                App Store
+              </span>
+            </div>
           </a>
 
           <a
             href="#"
-            className="span-font inline-flex items-center bg-black text-white px-4 py-4 rounded-lg mt-4 hover:bg-gray-800 transition-colors"
+            className="span-font inline-flex items-center w-fit bg-black text-white px-4 py-4 rounded-lg mt-4 hover:bg-gray-800 transition-colors"
           >
-            <FaGooglePlay className=" mr-2" />
-            Get it on Google Play
+            <FaGooglePlay className=" flex w-10 h-10" />
+            <div className="flex flex-col justify-start">
+              <span className=" flex justify-start">Get it on </span>
+              <span className="flex  justify-start font-semibold text-3xl ">
+                Google Play
+              </span>
+            </div>
           </a>
         </div>
       </div>

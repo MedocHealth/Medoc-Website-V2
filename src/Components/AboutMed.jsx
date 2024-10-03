@@ -1,8 +1,8 @@
 import React from "react";
-import "./AboutMed.css"
+import "./AboutMed.css";
 const AboutMed = () => {
   return (
-    <div className="Container flex flex-col  w-full   rounded-3xl mx-auto my-4 p-8 sm:p-20">
+    <div className="Container flex flex-col  w-full sm:w-4/5  rounded-3xl mx-auto my-4 p-8 sm:p-20">
       <h2 className="flex text-white Heading1 font-bold ">About MEDOC.</h2>
       <h3 className="Text1 flex text-white  font-semibold  my-1">
         “At MEDOC Health, we’re reshaping the future of healthcare.{" "}
