@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import medocNav from '../../Images/logo-nav.png';
 import './Navbar.css';
-
-const Navbar = () => {
+const Navbar = ({scrollToHome}) => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
    
-    <nav className="shadow-xl bg-white custom-nav rounded-lg z-50 ">
+    <nav className="shadow-xl bg-white custom-nav rounded-lg z-50 sticky top-0">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center">
@@ -18,7 +18,7 @@ const Navbar = () => {
           
           {/* Desktop menu */}
           <div className="hidden lg:flex lg:space-x-4">
-            <NavLink to="/" className="nav-link hover:text-teal-500">Home</NavLink>
+            <NavLink to="/" className="nav-link hover:text-teal-500" onClick={scrollToHome}>Home</NavLink>
 
             {/* <NavLink to="http://blog.medochealth.in" className="nav-link">Ecosystem</NavLink> */}
             <NavLink to="http://blog.medochealth.in" className="nav-link">Vitals</NavLink>
@@ -34,7 +34,8 @@ const Navbar = () => {
   Download App
 </button>
 
-            <button className=" text-white px-3 py-1 rounded-md text-sm font-medium  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 contact-us">
+            <button className=" text-white px-3 py-1 rounded-md text-sm font-medium  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 contact-us"
+            onClick={()=>navigate('/contact')}>
               Contact Us
             </button>
           </div>
@@ -66,7 +67,8 @@ const Navbar = () => {
               onClick={() => window.open('https://play.google.com/store/apps/dev?id=5749449385881385609&hl=en_IN', '_blank')}>
               Download App
             </button>
-            <button className=" w-full text-left block  text-white px-3 py-2 rounded-md text-base font-medium  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-50 mobile-contact-us">
+            <button className=" w-full text-left block  text-white px-3 py-2 rounded-md text-base font-medium  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-50 mobile-contact-us"
+             onClick={()=>navigate('/contact')}>
               Contact Us
             </button>
           </div>

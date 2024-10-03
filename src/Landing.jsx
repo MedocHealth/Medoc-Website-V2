@@ -14,6 +14,7 @@ import Video from "./Components/Video/Video";
 function Landing() {
   const videoRef = useRef(null); // Create a ref for the Video component
   const demoRef = useRef(null);
+  const homeRef = useRef(null);
   // Function to scroll to the Video component
   const scrollToVideo = () => {
       if (videoRef.current) {
@@ -25,11 +26,16 @@ function Landing() {
         demoRef.current.scrollIntoView({ behavior: 'smooth' });
     }
 };
+const scrollToHome = ()=>{
+  if(homeRef.current){
+    homeRef.current.scrollIntoView({behavior: 'smooth'});
+  }
+}
   return (
     <div className="pt-4 pl-4 pr-4">
-      <Navbar />
+      <Navbar scrollToHome={scrollToHome}/>
       <div >
-      <Intro scrollToDemo={scrollToDemo}/>
+      <Intro scrollToDemo={scrollToDemo} ref = {homeRef}/>
       </div>
      
       <OurProduct />
