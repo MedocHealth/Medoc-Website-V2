@@ -23,31 +23,37 @@ const Form = () => {
             >
               <input
                 type="text"
+                name="doctor_hospital_name"
                 placeholder="Doctor/Hospital Name"
                 className="w-full px-3 py-2 border input-font-style border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
               />
 
               <select
                 name="Specialities"
                 placeholder="Type"
                 className="input-font-style w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
               >
                 <option value="general">Type</option>
                 <option value="general">Doctor</option>
                 <option value="pediatrics">Hospital</option>
                 <option value="cardiology">Clinic</option>
                 <option value="neurology">Emergency</option>
-                <option value="orthopedics">Other</option>
+                <option value="Other">Other</option>
               </select>
 
               <input
                 type="text"
                 placeholder="Your Name"
+                name="your_name"
+                required
                 className="input-font-style w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
 
               <select
-                name="States"
+                name="State"
+                required
                 className="input-font-style w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 <option value="">Select a State</option>
@@ -84,6 +90,7 @@ const Form = () => {
               <div className="flex">
                 <select
                   name="Country-Code"
+                  required
                   className="input-font-style w-[28%] px-3 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 >
                   <option value="+91">+91 India</option>
@@ -100,7 +107,9 @@ const Form = () => {
                 </select>
                 <input
                   type="tel"
+                  required
                   placeholder="Phone Number"
+                   name="phone_number"
                   className="input-font-style w-3/4 px-3 py-2 border border-gray-300 rounded-r-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
@@ -108,12 +117,16 @@ const Form = () => {
               <input
                 type="email"
                 placeholder="Your Email"
+                name="email"
+                required
                 className="input-font-style w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
 
               <textarea
+              name="message"
                 placeholder="Your message....."
                 rows="4"
+                required
                 className="input-font-style w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               ></textarea>
 
