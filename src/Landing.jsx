@@ -6,12 +6,12 @@ import OurProduct from "./Components/OurProduct";
 import AboutMed from "./Components/AboutMed";
 import MedEcosystem from "./Components/MedEcosystem";
 import Vitals from "./Components/Vitals/Vitals";
-import Form from "./Components/Form/Form";
+// import Form from "./Components/Form/Form";
 import Header from "./Components/What-Do-We-Do/Header";
 import Main_Code from "./Components/What-Do-We-Do/Main_Code";
 import Foot_What from "./Components/What-Do-We-Do/Foot_What";
 import Video from "./Components/Video/Video";
-import Forms from './Components/Forms';
+import Calendar from './Components/Calendar';
 function Landing() {
   const videoRef = useRef(null); // Create a ref for the Video component
   const demoRef = useRef(null);
@@ -51,7 +51,7 @@ const scrollToHome = ()=>{
       </div>
       <div ref={demoRef}>
       {/* <Form /> */}
-      <Forms/>
+      <Calendar/>
       </div>
       <Footer />
     </div>
