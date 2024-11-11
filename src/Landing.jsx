@@ -11,6 +11,7 @@ import Header from "./Components/What-Do-We-Do/Header";
 import Main_Code from "./Components/What-Do-We-Do/Main_Code";
 import Foot_What from "./Components/What-Do-We-Do/Foot_What";
 import Video from "./Components/Video/Video";
+import Forms from './Components/Forms';
 function Landing() {
   const videoRef = useRef(null); // Create a ref for the Video component
   const demoRef = useRef(null);
@@ -49,7 +50,8 @@ const scrollToHome = ()=>{
       <Video/>
       </div>
       <div ref={demoRef}>
-      <Form />
+      {/* <Form /> */}
+      <Forms/>
       </div>
       <Footer />
     </div>
