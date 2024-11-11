@@ -15,7 +15,7 @@ const buttons = [
 
 function Forms() {
   return (
-    <div className="flex flex-col items-center h-[60vh] bg-gray-100 p-6">
+    <div className="flex flex-col items-center h-[60vh]  p-6">
       <h1 className="text-2xl md:text-4xl font-bold text-gray-500 mb-12">
         Book Your Appointment
       </h1>
