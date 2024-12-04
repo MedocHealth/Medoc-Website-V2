@@ -1,43 +1,73 @@
 .privacy-policy {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-  
-  .content-paper {
-    padding: 2rem;
-  }
-  
-  .header {
-    margin-bottom: 2rem;
-  }
-  
-  .logo {
-    display: block;
-    margin-bottom: 1rem;
-  }
-  
-  .tagline {
-    color: #555;
-    margin-bottom: 2rem;
-  }
-  
-  .main-title {
-    color: #00796b;
-    margin-bottom: 1rem;
-  }
-  
-  .last-updated {
-    color: #666;
-    margin-bottom: 2rem;
-  }
-  
-  .policy-text {
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-  }
-  
-  .section-title {
-    color: #00796b;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-  }
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.hospital-heading {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: rgba(42, 71, 85, 0.9); /* This represents 90% opacity */
+}
+
+/* Subheading */
+.sub-heading {
+  font-size: 54px;
+  line-height: 63.18px;
+  font-weight: bold;
+  color: #2a4755;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: 10px;
+}
+
+/* Description */
+.description {
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 28.5px;
+  color: rgba(42, 71, 85, 0.6); /* This represents 60% opacity */
+  margin-top: 10px;
+}
+
+.content-paper {
+  padding: 2rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.logo {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.main-title {
+  color: #00796b;
+  margin-bottom: 1rem;
+}
+
+.last-updated {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.policy-text {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.section-title {
+  color: #00796b;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
