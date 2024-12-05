@@ -1,6 +1,6 @@
 .privacy-policy {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .hospital-heading {
@@ -13,14 +13,8 @@
 
 /* Subheading */
 .sub-heading {
-  font-size: 54px;
-  line-height: 63.18px;
-  font-weight: bold;
   color: #2a4755;
   font-family: "Outfit", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  margin-top: 10px;
 }
 
 /* Description */
@@ -28,9 +22,7 @@
   font-family: "Outfit", sans-serif;
   font-weight: 500;
   font-size: 19px;
-  line-height: 28.5px;
   color: rgba(42, 71, 85, 0.6); /* This represents 60% opacity */
-  margin-top: 10px;
 }
 
 .content-paper {
@@ -38,12 +30,12 @@
 }
 
 .header {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .logo {
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 .tagline {
@@ -67,7 +59,16 @@
 }
 
 .section-title {
-  color: #00796b;
+  /* color: #00796b;
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; */
+
+  font-size: 54px;
+  line-height: 63.18px;
+  font-weight: bold;
+  color: #2a4755;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: 4rem;
 }
