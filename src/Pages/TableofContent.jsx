@@ -1,27 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-const TableOfContents = () => {
-  const sections = [
-    { id: 1, title: "WHAT INFORMATION DO WE COLLECT?" },
-    {
-      id: 2,
-      title: "WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?",
-    },
-    { id: 3, title: "DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?" },
-    {
-      id: 4,
-      title: "HOW DO WE HANDLE YOUR SOCIAL LOGINS?",
-    },
-    { id: 5, title: "HOW LONG DO WE KEEP YOUR INFORMATION?" },
-    { id: 6, title: "HOW DO WE KEEP YOUR INFORMATION SAFE?" },
-    { id: 7, title: "WHAT ARE YOUR PRIVACY RIGHTS?" },
-    { id: 8, title: "CONTROLS FOR DO-NOT-TRACK FEATURES" },
-    { id: 9, title: "CHILDREN'S PRIVACY" },
-    { id: 10, title: "DO WE MAKE UPDATES TO THIS NOTICE?" },
-    { id: 11, title: "HOW CAN YOU CONTACT US ABOUT THIS NOTICE?" },
-    { id: 12, title: "HOW CAN YOU CONTACT US ABOUT THIS NOTICE?" },
-  ];
-
+const TableOfContents = ({ sections, title = "Table of Contents" }) => {
   return (
     <div className="flex flex-col max-h-fit m-6 md:border-2 border-[#2a4755] rounded-xl lg:mt-10">
       <h2 className="sub-heading flex justify-right text-3xl lg:text-4xl pt-2  font-semibold mb-4 mx-2">
@@ -38,6 +18,16 @@ const TableOfContents = () => {
       </ol>
     </div>
   );
+};
+
+TableOfContents.propTypes = {
+  sections: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  title: PropTypes.string,
 };
 
 export default TableOfContents;

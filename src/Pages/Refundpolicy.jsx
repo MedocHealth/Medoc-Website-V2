@@ -1,36 +1,34 @@
+import React from "react";
+import logo from "../Images/logo-nav.png";
+import "./privacypolicy.css";
 
-import React from 'react';
-import { Container, Typography, Box, Paper, List, ListItem, ListItemText } from '@mui/material';
-import logo from '../Images/logo-nav.png';
-import './privacypolicy.css';
-
-function Refundpolicy() {
+const Refundpolicy = () => {
   return (
-    <Container maxWidth="lg" className="privacy-policy">
-    {/* paper used to make it as legal docs */}
-      <Paper elevation={3} className="content-paper">
-        <Box className="header">
-          <img src={logo} width="173" height="40" alt="footer-logo" className="logo" />
-          <Typography variant="body1" className="tagline">
-            The complete healthcare ecosystem building towards better accessibility
-            to healthcare and supporting you with medical finances and family medicine.
-          </Typography>
-        </Box>
+    <div className="privacy-policy  w-full p-6">
+      {/* Header Section */}
+      <header className="header">
+        <img
+          src={logo}
+          width="173"
+          height="40"
+          alt="footer-logo"
+          className="logo"
+        />
+        <p className="description">
+          The complete healthcare ecosystem building towards better
+          accessibility to healthcare and supporting you with medical finances
+          and family medicine.
+        </p>
+      </header>
 
-        <Typography variant="h4" component="h1" className="main-title">
-          REFUND POLICY
-        </Typography>
-
-        {/* <Typography variant="body2" className="last-updated">
-          Last updated April 4, 2024
-        </Typography> */}
-
-        <Typography variant="body1" className="policy-text">
+      <h1 className="sub-heading flex m-2 justify-center text-10xl ">
+        REFUND POLICY
+      </h1>
+      <p className="description flex justify-center items-center w-full p-2 text-wrap text-justify ">
         Medoc Health IT Private Limited does not support or provide any refunds.
-          </Typography>
-      </Paper>
-    </Container>
+      </p>
+    </div>
   );
-}
+};
 
 export default Refundpolicy;

@@ -4,6 +4,26 @@ import "./privacypolicy.css";
 import TableofContent from "./TableofContent";
 
 const PrivacyPolicy = () => {
+  const keyHeading = [
+    { id: 1, title: "WHAT INFORMATION DO WE COLLECT?" },
+    {
+      id: 2,
+      title: "WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?",
+    },
+    { id: 3, title: "DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?" },
+    {
+      id: 4,
+      title: "HOW DO WE HANDLE YOUR SOCIAL LOGINS?",
+    },
+    { id: 5, title: "HOW LONG DO WE KEEP YOUR INFORMATION?" },
+    { id: 6, title: "HOW DO WE KEEP YOUR INFORMATION SAFE?" },
+    { id: 7, title: "WHAT ARE YOUR PRIVACY RIGHTS?" },
+    { id: 8, title: "CONTROLS FOR DO-NOT-TRACK FEATURES" },
+    { id: 9, title: "CHILDREN'S PRIVACY" },
+    { id: 10, title: "DO WE MAKE UPDATES TO THIS NOTICE?" },
+    { id: 11, title: "HOW CAN YOU CONTACT US ABOUT THIS NOTICE?" },
+    { id: 12, title: "HOW CAN YOU CONTACT US ABOUT THIS NOTICE?" },
+  ];
   return (
     <div className="privacy-policy  w-full p-6">
       {/* Header Section */}
@@ -30,7 +50,7 @@ const PrivacyPolicy = () => {
       </p>
 
       <div className="flex flex-col lg:flex-row-reverse ">
-        <TableofContent className="" />
+        <TableofContent sections={keyHeading} />
         <main className="flex flex-col w-full lg:w-3/4 p-6 ">
           <h2 className="sub-heading flex justify-right text-3xl lg:text-4xl pt-2 ">
             PRIVACY POLICY
