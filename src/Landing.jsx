@@ -34,10 +34,16 @@ const scrollToHome = ()=>{
 }
   return (
     <div className="pt-4 pl-4 pr-4">
-      <Navbar scrollToHome={scrollToHome}/>
-      <div >
-      <Intro scrollToDemo={scrollToDemo} ref = {homeRef}/>
+       <Navbar scrollToHome={scrollToHome} />
+      
+      <div ref={homeRef}>
+        <Intro scrollToDemo={scrollToDemo} />
       </div>
+      
+      <div ref={demoRef}>
+        <Calendar />
+      </div>
+      
      
       <OurProduct />
       <AboutMed />
