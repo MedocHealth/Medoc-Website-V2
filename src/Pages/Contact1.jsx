@@ -70,7 +70,7 @@ const Contact1 = () => {
                 "&:hover": { color: "#2a4755" },
               }}
               aria-label="Instagram"
-              href="https://www.instagram.com/medochealth"
+              href="https://www.instagram.com/medochealth.in"
             >
               <Instagram />
             </IconButton>
